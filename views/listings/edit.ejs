@@ -1,0 +1,56 @@
+<%- layout("/layouts/boilerplate") %>
+<div class="row mt-3">
+    <div class="col-8 offset-2">
+
+    
+<body>
+    <h3>Edit your listing</h3>
+    <form method="POST" action="/listings/<%= listings._id  %>?_method=PUT"novalidate class="needs-validation"
+        enctype="multipart/form-data">
+        <div class="mb-3">
+            <label for="title" class="form-label">Title</label>
+        <input name="listing[title]" value ="<%= listings.title  %>"class="form-control"required/>
+        <div class="valid-feedback">Nice Title</div>
+        </div>
+        
+
+        <div class="mb-3">
+        <label for="description" class="form-label">description</label>
+        <textarea name="listing[description]" class="form-control" required >
+         <%= listings.description  %> 
+        </textarea>
+        <div class="invalid-feedback">Please enter short Description</div>
+        </div>
+        
+        <div class="mb-3">
+            <label for="img" class="form-label">Upload New Image</label>
+        <input name="listing[image]"type="file" class="form-control"  id="img" />
+        </div>
+    
+
+        <div class="mb-3">
+            <label for="price" class="form-label">price</label>
+        <input name="listing[price]" value ="<%= listings.price  %>"class="form-control"required/>
+        <div class="invalid-feedback">Please enter Price</div>
+        </div>
+        
+
+        <div class="mb-3">
+            <label for="location" class="form-label">location</label>
+        <input name="listing[location]" value ="<%= listings.location %>"class="form-control"required/>
+        <div class="invalid-feedback">Please enter location</div>
+        </div>
+        
+
+        <div class="mb-3">
+            <label for="country" class="form-label">country</label>
+        <input name="listing[country]" value ="<%= listings.country  %>"class="form-control"required/>
+        <div class="invalid-feedback">Please enter Country</div>
+        </div>
+        
+        
+        <button class="btn btn-dark edit-btn mt-3">Edit </button> 
+    </form>
+
+</div>
+</div>
