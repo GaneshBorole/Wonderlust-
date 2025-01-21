@@ -1,1 +1,1 @@
-The Airbnb Wanderlust project is a web design initiative aimed at creating an interactive, visually stunning platform that inspires users to explore unique destinations and accommodations around the world. The concept revolves around delivering a seamless experience for travel enthusiasts to discover, plan, and book their dream trips.
+
